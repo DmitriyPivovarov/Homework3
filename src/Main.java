@@ -117,9 +117,9 @@ public class Main {
         short gWeightLossPerDayTypeOne = 250;
         short gWeightLossPerDayTypeTwo = 500;
 
-        short GperKg = 1000;
+        short gPerKg = 1000;
 
-        int requiredWeightLossG = requiredWeightLossKg * GperKg;
+        int requiredWeightLossG = requiredWeightLossKg * gPerKg;
         int requiredDaysTypeOne = requiredWeightLossG / gWeightLossPerDayTypeOne; // Мы не знаем будет ли число цельным, поэтому хочется поставить float, однако количество дней, выраженное дробным числом, выглядит, как минимум, некорректно
         int requiredDaysTypeTwo = requiredWeightLossG / gWeightLossPerDayTypeTwo; // Дробный результат можно было бы перевести в переменную типа цельных чисел (byte, short, int, long), однако это вызвало бы неоправданное увеличение строк в программе
 
